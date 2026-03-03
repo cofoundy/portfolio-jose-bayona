@@ -20,7 +20,7 @@ export const siteConfig = {
 
   social: {
     email: "jbayonaa@gmail.com",
-    linkedin: "https://linkedin.com/in/jbayonaa",
+    linkedin: "https://www.linkedin.com/in/jos%C3%A9-bayona-alvarado-007309107",
   },
 
   aboutMe:
