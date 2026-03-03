@@ -1,0 +1,138 @@
+% Harvard-Format Professional CV — José Manuel Bayona Alvarado
+% Compile with: xelatex cv-bayona.tex
+
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[margin=0.55in, top=0.45in, bottom=0.45in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\normalsize\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.5em}{0.25em}
+
+% --- List Formatting ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=0.5pt, topsep=1.5pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries José Manuel Bayona Alvarado} \\[3pt]
+  \faIcon{map-marker-alt}\enspace San Isidro, Lima, Perú
+  \quad\faIcon{envelope}\enspace \href{mailto:jbayonaa@gmail.com}{jbayonaa@gmail.com}
+  \quad\faIcon{phone}\enspace +51 937 731 668
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://www.linkedin.com/in/jos%C3%A9-bayona-alvarado-007309107}{linkedin.com/in/josé-bayona-alvarado}
+  \quad\faIcon{globe}\enspace \href{https://jose-bayona.cofoundy.dev}{jose-bayona.cofoundy.dev}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EXPERIENCIA
+% ============================================
+\section{Experiencia Profesional}
+
+\entry{IDOM Consulting — Refinería La Pampilla (REPSOL)}{Lima, Perú}{Controlador de Procura PMO}{Feb 2025 -- Actualidad}
+\begin{itemize}
+  \item Dirige la supervisión e integración de todos los proyectos de I\&C de RELAPASAA, coordinando con gerencia e ingenieros de proyectos
+  \item Implementó una PMO formal para gestión de procura, estableciendo KPIs, guías y plantillas como base metodológica del área
+  \item Controla el estado de adquisiciones de materiales del portafolio de inversión, reportando desviaciones en tiempo y costo de forma temprana
+\end{itemize}
+\vspace{0.2em}
+
+\entry{Engie Energía Perú — Corporación Overall}{Lima, Perú}{Comprador}{Feb 2023 -- Ene 2025}
+\begin{itemize}
+  \item Gestionó el ciclo completo de compras corporativas: peticiones de oferta, evaluación, negociación y emisión de pedidos en SAP HANA y ARIBA
+  \item Monitoreó el desempeño de proveedores en aspectos financieros, éticos y de cumplimiento, asegurando estándares de calidad
+  \item Realizó seguimiento end-to-end de órdenes de compra de materiales y servicios hasta su entrega final
+\end{itemize}
+\vspace{0.2em}
+
+\entry{IDOM Consulting — Consorcio PMC Talara (PETROPERÚ)}{Talara, Perú}{Procura and Material Controller}{Dic 2017 -- Mar 2022}
+\begin{itemize}
+  \item Supervisó compras, importaciones y almacenamiento del megaproyecto PMRT para contratistas Técnicas Reunidas y Consorcio COBRA\_SCL
+  \item Coordinó activaciones y expediting de órdenes de servicio, consolidando documentación de adquisiciones internacionales
+  \item Controló recepción en Puerto de Paita de insumos importados y supervisó inventarios periódicos en múltiples almacenes del proyecto
+\end{itemize}
+\vspace{0.2em}
+
+\entry{Pandero SA EAFC}{Lima, Perú}{Asistente de Logística}{Dic 2013 -- Oct 2016}
+\begin{itemize}
+  \item Supervisó requerimientos de bienes y servicios de todas las áreas, optimizando la gestión de compras en sistema DOMINO
+  \item Gestionó proveedores y contratos de servicios a nivel nacional, evaluando desempeño en atención de órdenes de compra
+\end{itemize}
+\vspace{0.2em}
+
+% ============================================
+% EDUCACIÓN
+% ============================================
+\section{Educación}
+
+\entry{EAE Business School — Universitat Politècnica de Catalunya}{Barcelona, España}{Master en Supply Chain Management \& Logistics}{Registro en SUNEDU}
+\vspace{0.2em}
+
+\entry{Universidad San Ignacio de Loyola (USIL)}{Lima, Perú}{Licenciado en Administración — Colegiatura CORLAD Lima REGUC: 037552}{Tercio superior}
+\vspace{0.2em}
+
+% ============================================
+% CERTIFICACIONES
+% ============================================
+\section{Certificaciones y Formación Continua}
+
+\begin{itemize}
+  \item Certificación OEC — Organismo Supervisor de las Contrataciones del Estado (OSCE), 2022
+  \item Scrum Master Professional Certificate SMPC\textsuperscript{\textregistered} — CertiProf, 2021
+  \item Diplomado en Control Público — CEGEP (600 hrs), 2022
+  \item Diplomado Internacional en Gestión Logística y Operaciones — UNI, 2015--2016
+  \item Power BI Desktop — Universidad de Piura | 5S — Instituto para la Calidad PUCP
+\end{itemize}
+\vspace{0.1em}
+
+% ============================================
+% SKILLS
+% ============================================
+\section{Habilidades y Competencias}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Técnicas:} & SAP HANA, SAP ARIBA, Power BI, MS Project, SIGA, SEACE, J.D. Edwards \\
+\textbf{Gestión:} & Supply Chain Management, Procura, Control de Materiales, Gestión de Almacenes, Logística Internacional \\
+\textbf{Metodologías:} & Lean (5S), Kaizen, Scrum, PMO \\
+\textbf{Idiomas:} & Español (nativo), Inglés \\
+\end{tabularx}
+
+\end{document}
